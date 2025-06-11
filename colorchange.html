@@ -1,0 +1,12 @@
+<button id="btn" onclick="update()">Change Color</button>
+
+<script>
+    var btn = document.getElementById("btn");
+    var colors = ["violet", "red", "blue", "green", "yellow", "orange"]; // List of colors
+    var index = 0;
+
+    function update() {
+        btn.style.backgroundColor = colors[index];
+        index = (index + 1) % colors.length; // Cycle through colors
+    }
+</script>
