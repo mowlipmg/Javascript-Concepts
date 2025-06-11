@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Content</title>
+</head>
+<body>
+    <ul id="given">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Carrot</li>
+    </ul>
+    <button onclick="appendcontent()">Append Content</button>
+</body>
+
+<script>
+    const List=document.getElementById("given");
+
+    function appendcontent()
+    {
+        const li=document.createElement("li");
+        const textNode=document.createTextNode("Orange");
+        li.appendChild(textNode);
+        List.append(li);
+
+    }
+
+
+</script>
+</html>
