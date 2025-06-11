@@ -1,0 +1,12 @@
+<h1 id="result">Countries</h1>
+<button onclick="update(event)">America</button>
+<button onclick="update(event)">London</button>
+<button onclick="update(event)">Australia</button>
+ 
+<script>
+    var h1=document.getElementById("result")
+    function update(event)
+    {
+        h1.textContent=event.target.textContent
+    }
+</script>
