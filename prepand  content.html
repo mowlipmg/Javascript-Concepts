@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepand Content</title>
+</head>
+<body>
+    <ul id="given">
+        <li>How</li>
+        <li>are</li>
+        <li>you</li>
+    </ul>
+   <button onclick="prepandcontent()">prepandcontent</button>
+  <script>
+    const List=document.getElementById("given");
+
+    function prepandcontent()
+    {
+        const li=document.createElement("li");
+        const textNode=document.createTextNode("Hai Mowli");
+        li.appendChild(textNode);
+        List.prepend(li);
+    }
+  </script>
+</body>
+</html>

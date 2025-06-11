@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="lists">
+    <li>Tv</li>
+    <li>Fridge</li>
+    <li>Washing Machine</li>
+    </ul>
+    <button onclick="replaceContent()">Replace content</button>
+</body>
+<script>
+    const lists=document.getElementById("lists");
+    
+    function replaceContent() {
+    lists.innerHTML=
+        "<li>Foods</li>"  +
+        "<li>Clothes</li>" +
+        "<li>Electronic products</li>"
+}
+</script>
+</html>
